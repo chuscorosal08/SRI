@@ -1,7 +1,7 @@
 # Guia de intalacion y configuracion generica para poder aplicar en diferentes usos o recursos
 
 
-<img src="../Tema 0/imgagen/1.png">
+<img src="Tema0/img/1.png">
 
 Vamos a comprobar nuestra dirección IP para ver si se ha instalado correctamente (también podemos hacerlo con localhost).
 
