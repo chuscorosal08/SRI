@@ -6,7 +6,7 @@ Creamos un script para cada uno de los siguientes problemas:
 
 Primero creamos un archivo ejecutable para escribir el script.
 
-![](/img/intro/12.png)
+![](/img/intro/17.png)
 
 Y dentro de él escribimos lo siguiente:
 
@@ -24,15 +24,15 @@ else
 fi
 ```
 
-![](/Tema1/img/Screenshot_45.png)
+![](/img/intro/18.png)
 
 Hacemos las comprobaciones.
 
-![](/Tema1/img/Screenshot_46.png)
+![](/img/intro/19.png)
 
 Y comprobamos que de verdad se ha añadido al fichero.
 
-![](/Tema1/img/Screenshot_44_1.png)
+![](/img/intro/20.png)
 
 + Crea un script que añada un nombre de dominio y una ip al fichero hosts. Debemos comprobar que no existe dicho dominio en el fichero hosts
 
@@ -52,23 +52,24 @@ else
 fi
 ```
 
-![](/Tema1/img/Screenshot_47.png)
+![](/img/intro/21.png)
 
 Hacemos las comprobaciones.
 
-![](/Tema1/img/Screenshot_48.png)
+![](/img/intro/22.png)
 
 Y comprobamos que de verdad se ha añadido al fichero.
 
-![](/Tema1/img/Screenshot_49.png)
+![](/img/intro/23.png)
 
 Reiniciamos el servicio.
 
-![](/Tema1/img/Screenshot_50.png)
+![](/img/intro/24.png)
+![](/img/intro/25.png)
 
 Y vemos que ahora al introducir ese nombre de dominio, nos lleva a la IP que hemos introducido.
 
-![](/Tema1/img/Screenshot_51.png)
+![](/img/intro/26.png)
 
 + Crea un script que nos permita crear una página web con un título, una cabecera y un mensaje
 
@@ -101,17 +102,18 @@ else
 fi
 ```
 
-![](/Tema1/img/Screenshot_52.png)
+![](/img/intro/27.png)
 
 Hacemos las comprobaciones.
 
-![](/Tema1/img/Screenshot_53.png)
+![](/img/intro/28.png)
 
 Reiniciamos el servicio y comprobamos que de verdad se ha añadido al fichero.
 
-![](/Tema1/img/Screenshot_54.png)
-![](/Tema1/img/Screenshot_55.png)
+![](/img/intro/29.png)
+![](/img/intro/30.png)
+![](/img/intro/31.png)
 
 Y vemos que ahora al introducir el recurso en la URL, nos lleva a este.
 
-![](/Tema1/img/Screenshot_56.png)
+![](/img/intro/32.png)
