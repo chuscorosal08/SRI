@@ -1,29 +1,8 @@
 # Guia de intalacion y configuracion generica para poder aplicar en diferentes usos o recursos
 
-# Instalación del servidor web Apache
 
-Primero actualizamos la lista de paquetes disponibles en los repositorios configurados en el sistema.
+<img src="../Tema 0/imgagen/1.png">
 
-```
-sudo apt update
-```
-<img src="../Trabajo final 1 trimestre/img/1.png">
-<img src="../Trabajo final 1 trimestre/img/2.png">
-
-```
-sudo apt upgrade
-```
-
-<img src="../Trabajo final 1 trimestre/img/3.png">
-<img src="../Trabajo final 1 trimestre/img/4.png">
-E instalamos el servicio de Apache.
-
-```
-sudo apt install apache2
-```
-
-<img src="../Trabajo final 1 trimestre/img/5.png">
-<img src="../Trabajo final 1 trimestre/img/6.png">
 Vamos a comprobar nuestra dirección IP para ver si se ha instalado correctamente (también podemos hacerlo con localhost).
 
 ```
