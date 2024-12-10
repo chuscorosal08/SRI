@@ -16,5 +16,5 @@ Este repositorio incluye actividades llevadas a cabo en el ciclo Administración
 
 | Número de ejercicio | Ejercicios de introducción |
 | --- | --- |
-| [Ejercicio 1] | Practica final 1 Trimestre |
+| Ejercicio 1 | Practica final 1 Trimestre |
 
