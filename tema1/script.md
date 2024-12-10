@@ -6,7 +6,7 @@ Creamos un script para cada uno de los siguientes problemas:
 
 Primero creamos un archivo ejecutable para escribir el script.
 
-![](/Tema1/img/Screenshot_44.png)
+![](/img/intro/12.png)
 
 Y dentro de él escribimos lo siguiente:
 
