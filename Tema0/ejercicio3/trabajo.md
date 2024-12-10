@@ -7,7 +7,7 @@ Probamos los siguientes ejemplos.
 telnet www.profesordeinformatica.com 80
 ```
 
-![](Tema0/img/1.png)
+![](/img/1.png)
 
 Y escribimos.
 
