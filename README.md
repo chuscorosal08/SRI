@@ -12,7 +12,7 @@ Este repositorio incluye actividades llevadas a cabo en el ciclo Administración
 | Ejercicio 5 | Práctica servidor web |
 | Ejercicio 6 | Repositorio Github |
 
-**Trabjo 1 trim - trabajo final de 1º trimestre/scripts**
+**Trabjo 1 trim - trabajo final de 1º trimestre/**
 
 | Número de ejercicio | Ejercicios de introducción |
 | --- | --- |
