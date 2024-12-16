@@ -6,7 +6,7 @@ Primero actualizamos la lista de paquetes disponibles en los repositorios config
 sudo apt update
 ```
 
-<img src="../aws_sql_ssh/img/1.png">
+![](/img/intro/33.png)
 
 ```
 sudo apt upgrade
