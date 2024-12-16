@@ -12,9 +12,16 @@ Este repositorio incluye actividades llevadas a cabo en el ciclo Administración
 | Ejercicio 5 | Práctica servidor web |
 | Ejercicio 6 | Repositorio Github |
 
-**Tema 1 - trabajo final de 1º trimestre/scripts**
+**Trabjo 1 trim - trabajo final de 1º trimestre/scripts**
+
+| Número de ejercicio | Ejercicios de introducción |
+| --- | --- |
+| practica 1  | Práctica Servidores Web 1º Trimestre |
+
+**Tema 1 - aws/scritps**
 
 | Número de ejercicio | Ejercicios de introducción |
 | --- | --- |
 | Ejercicio 1 | Scripts en Apache |
-| practica 1  | Práctica Servidores Web 1º Trimestre |
+| AWS | aws_sql_ssl |
+
