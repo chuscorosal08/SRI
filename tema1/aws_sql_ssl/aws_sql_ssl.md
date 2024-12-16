@@ -6,7 +6,7 @@ Primero actualizamos la lista de paquetes disponibles en los repositorios config
 sudo apt update
 ```
 
-![](/Tema1/img3/Screenshot_20.png)
+![](/img/1.png)
 
 ```
 sudo apt upgrade
