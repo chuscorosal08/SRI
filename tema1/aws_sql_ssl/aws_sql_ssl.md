@@ -12,7 +12,8 @@ sudo apt update
 sudo apt upgrade
 ```
 
-![](/Tema1/img3/Screenshot_21.png)
+![](/img/intro/34.png)
+
 
 E instalamos Apache.
 
@@ -20,7 +21,8 @@ E instalamos Apache.
 sudo apt-get install apache2
 ```
 
-![](/Tema1/img3/Screenshot_22.png)
+![](/img/intro/35.png)
+
 
 # Autenticación MySQL
 
@@ -30,13 +32,15 @@ Primero instalamos PHP, MySQL y MariaDB.
 sudo apt-get install apache2 php7.0 libapruti11-dbd-mysql -y
 ```
 
-![](/Tema1/img3/Screenshot_23.png)
+![](/img/intro/36.png)
+
 
 ```
 sudo apt-get install mariadb-server mariadb-client -y
 ```
 
-![](/Tema1/img3/Screenshot_24.png)
+![](/img/intro/37.png)
+
 
 Y activamos los servicios.
 
@@ -48,7 +52,8 @@ sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
 
-![](/Tema1/img3/Screenshot_25.png)
+![](/img/intro/38.png)
+
 
 Entramos en mysql.
 
@@ -62,7 +67,8 @@ Y creamos una base de datos.
 create database defaultsite_db;
 ```
 
-![](/Tema1/img3/Screenshot_26.png)
+![](/img/intro/39.png)
+
 
 Le damos permisos totales al admin.
 
@@ -70,19 +76,22 @@ Le damos permisos totales al admin.
 GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';
 ```
 
-![](/Tema1/img3/Screenshot_27.png)
+![](/img/intro/40.png)
+
 
 ```
 GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password';
 ```
 
-![](/Tema1/img3/Screenshot_28.png)
+![](/img/intro/41.png)
+
 
 ```
 flush privileges;
 ```
 
-![](/Tema1/img3/Screenshot_29.png)
+![](/img/intro/42.png)
+
 
 Entramos en la base de datos.
 
@@ -90,7 +99,8 @@ Entramos en la base de datos.
 use defaultsite_db;
 ```
 
-![](/Tema1/img3/Screenshot_30.png)
+![](/img/intro/43.png)
+
 
 Y creamos una tabla para los usuarios autenticados.
 
@@ -98,7 +108,8 @@ Y creamos una tabla para los usuarios autenticados.
 create table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );
 ```
 
-![](/Tema1/img3/Screenshot_31.png)
+![](/img/intro/44.png)
+
 
 Transformamos una contraseña a hash para hacerlo más seguro.
 
@@ -106,7 +117,8 @@ Transformamos una contraseña a hash para hacerlo más seguro.
 htpasswd -bns siteuser siteuser
 ```
 
-![](/Tema1/img3/Screenshot_32.png)
+![](/img/intro/45.png)
+
 
 E insertamos los datos en la tabla que hemos creado en la base de datos.
 
@@ -114,7 +126,8 @@ E insertamos los datos en la tabla que hemos creado en la base de datos.
 INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');
 ```
 
-![](/Tema1/img3/Screenshot_33.png)
+![](/img/intro/46.png)
+
 
 Habilitamos los módulos necesarios.
 
@@ -134,7 +147,8 @@ sudo a2enmod socache_shmcb
 sudo a2enmod authn_socache
 ```
 
-![](/Tema1/img3/Screenshot_34.png)
+![](/img/intro/47.png)
+
 
 Creamos el directorio que estará protegido.
 
@@ -146,7 +160,8 @@ sudo mkdir /var/www/html/protecteddir
 sudo chown -R www-data:www-data /var/www/html/protecteddir
 ```
 
-![](/Tema1/img3/Screenshot_35.png)
+![](/img/intro/48.png)
+
 
 Y modificamos la configuración de Apache de nuestro dominio.
 
@@ -154,7 +169,8 @@ Y modificamos la configuración de Apache de nuestro dominio.
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
-![](/Tema1/img3/Screenshot_36.png)
+![](/img/intro/49.png)
+
 
 Introducimos lo siguiente.
 
@@ -187,7 +203,8 @@ Require valid-user
 AuthDBDUserPWQuery "SELECT passwd FROM mysql_auth WHERE username = %s"
 ```
 
-![](/Tema1/img3/Screenshot_37.png)
+![](/img/intro/50.png)
+
 
 Y reiniciamos Apache.
 
@@ -195,13 +212,17 @@ Y reiniciamos Apache.
 sudo systemctl restart apache2
 ```
 
-![](/Tema1/img3/Screenshot_38.png)
+![](/img/intro/51.png)
+
 
 Ahora cuando entremos al directorio por acceso web, nos pedirá el usuario y contraseña.
 
-![](/Tema1/img3/Screenshot_39.png)
-![](/Tema1/img3/Screenshot_40.png)
-![](/Tema1/img3/Screenshot_41.png)
+![](/img/intro/52.png)
+
+![](/img/intro/53.png)
+
+![](/img/intro/54.png)
+
 
 # Certificados SSL
 
@@ -211,7 +232,8 @@ Abrimos los puertos http y https.
 sudo uf allow "Apache Full"
 ```
 
-![](/Tema1/img3/Screenshot_42.png)
+![](/img/intro/55.png)
+
 
 Activamos el módulo necesario.
 
@@ -219,7 +241,8 @@ Activamos el módulo necesario.
 sudo a2enmod ssl
 ```
 
-![](/Tema1/img3/Screenshot_43.png)
+![](/img/intro/56.png)
+
 
 Y reiniciamos Apache
 
@@ -227,7 +250,8 @@ Y reiniciamos Apache
 sudo systemctl restart apache2
 ```
 
-![](/Tema1/img3/Screenshot_44.png)
+![](/img/intro/57.png)
+
 
 Creamos el certificado.
 
@@ -235,7 +259,8 @@ Creamos el certificado.
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
 ```
 
-![](/Tema1/img3/Screenshot_45.png)
+![](/img/intro/58.png)
+
 
 Importante en Common Name introducir nuestra IP o nombre de dominio configurado.
 
@@ -249,7 +274,7 @@ Common Name (eg, your name or your server's hostname) []:tu_ip
 Email Address []:webmaster@example.com
 ```
 
-![](/Tema1/img3/Screenshot_46.png)
+![](/img/intro/59.png)
 
 Y modificamos la configuración de Apache de nuestro dominio.
 
@@ -257,7 +282,8 @@ Y modificamos la configuración de Apache de nuestro dominio.
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
-![](/Tema1/img3/Screenshot_47.png)
+![](/img/intro/60.png)
+
 
 Introducimos lo siguiente en un VirtualHost en el puerto 443.
 
@@ -274,8 +300,10 @@ Introducimos lo siguiente en un VirtualHost en el puerto 443.
 </VirtualHost>
 ```
 
-![](/Tema1/img3/Screenshot_48.png)
-![](/Tema1/img3/Screenshot_49.png)
+![](/img/intro/61.png)
+
+![](/img/intro/62.png)
+
 
 Reiniciamos Apache.
 
@@ -287,11 +315,15 @@ sudo apache2ctl configtest
 sudo systemctl reload apache2
 ```
 
-![](/Tema1/img3/Screenshot_50.png)
+![](/img/intro/63.png)
+
 
 Y ya tenemos el certificado SSL autofirmado.
 
-![](/Tema1/img3/Screenshot_54.png)
-![](/Tema1/img3/Screenshot_55.png)
-![](/Tema1/img3/Screenshot_56.png)
-![](/Tema1/img3/Screenshot_57.png)
+![](/img/intro/64.png)
+
+![](/img/intro/65.png)
+
+![](/img/intro/66.png)
+
+![](/img/intro/67.png)
