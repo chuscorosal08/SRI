@@ -15,7 +15,7 @@
     docker run hello-world
     ```
 
-    ![Running Hello World Image (From Activity 1)](/Docker/.imgs/Act-1/Fig3.png)
+    ![Running Hello World Image (From Activity 1)](/docker/.imgs/ACT-1/Fig3.png)
 
     Este comando descarga la imagen `hello-world` (si no está presente localmente) y la ejecuta en un contenedor. Deberías ver un mensaje de saludo de Docker.
 
@@ -25,7 +25,7 @@
     docker images
     ```
 
-    ![Docker Images](/Docker/.imgs/Act-2/Fig1.png)
+    ![Docker Images](/docker/.imgs/Act-2/Fig1.png)
 
     Este comando lista todas las imágenes Docker almacenadas localmente, incluyendo `hello-world`.
 
@@ -35,7 +35,7 @@
     docker ps -a
     ```
 
-    ![Docker ps -a](/Docker/.imgs/Act-2/Fig2.png)
+    ![Docker ps -a](/docker/.imgs/Act-2/Fig2.png)
 
     Este comando lista todos los contenedores Docker, tanto los que están en ejecución como los que están detenidos. Verás el contenedor `hello-world` que ejecutaste previamente.
 
@@ -59,7 +59,7 @@
         EXPOSE 3000
         ```
 
-    ![Dockerfile](/Docker/.imgs/Act-2/Fig3.png)
+    ![Dockerfile](/docker/.imgs/Act-2/Fig3.png)
 
 2. **Construye el contenedor**
 
@@ -67,7 +67,7 @@
     docker build -t getting-started .
     ```
 
-    ![Docker build](/Docker/.imgs/Act-2/Fig4.png)
+    ![Docker build](/docker/.imgs/Act-2/Fig4.png)
 
 3. **Ejecútalo**
 
@@ -75,7 +75,7 @@
     docker run -d -p 127.0.0.1:3000:3000 getting-started
     ```
 
-    ![Docker run](/Docker/.imgs/Act-2/Fig5.png)
+    ![Docker run](/docker/.imgs/Act-2/Fig5.png)
 
     * `-d` ejecuta el contenedor en segundo plano.
     * `-p 3000:3000` mapea el puerto 80 del contenedor al puerto 80 del host.
@@ -92,7 +92,7 @@
         docker login
         ```
 
-    ![Docker run](/Docker/.imgs/Act-2/Fig6.png)
+    ![Docker run](/docker/.imgs/Act-2/Fig6.png)
 
     * Etiqueta tu imagen:
 
