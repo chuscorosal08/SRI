@@ -64,7 +64,7 @@ A continuación, se presentan tres ejemplos de creación de imágenes Docker, ba
     docker rm <ID_DEL_CONTENEDOR>
     ```
 
-![Example 1](/Docker/.imgs/Act-6/Fig1.png)
+![Example 1](/docker/.imgs/Act-6/Fig1.png)
 
 #### [Ejemplo 2: Construcción de imágenes con una aplicación PHP](https://github.com/josedom24/curso_docker_ies/blob/main/modulo5/ejemplo2.md)
 
@@ -114,8 +114,8 @@ A continuación, se presentan tres ejemplos de creación de imágenes Docker, ba
     docker rm <ID_DEL_CONTENEDOR>
     ```
 
-![Example 2](/Docker/.imgs/Act-6/Fig2.png)
-![Example 2](/Docker/.imgs/Act-6/Fig3.png)
+![Example 2](/docker/.imgs/Act-6/Fig2.png)
+![Example 2](/docker/.imgs/Act-6/Fig3.png)
 
 #### [Ejemplo 3: Construcción de imágenes con una aplicación Python](https://github.com/josedom24/curso_docker_ies/blob/main/modulo5/ejemplo3.md)
 
@@ -184,6 +184,6 @@ A continuación, se presentan tres ejemplos de creación de imágenes Docker, ba
     docker rm <ID_DEL_CONTENEDOR>
     ```
 
-![Example 3](/Docker/.imgs/Act-6/Fig4.png)
-![Example 3](/Docker/.imgs/Act-6/Fig5.png)
+![Example 3](/docker/.imgs/Act-6/Fig4.png)
+![Example 3](/docker/.imgs/Act-6/Fig5.png)
 
