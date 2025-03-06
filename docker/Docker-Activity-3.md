@@ -103,5 +103,5 @@
     docker rm $(docker ps -aq)
     ```
 
-    ![Step 13](/Docker/.imgs/Act-3/Fig6.png)
+    ![Step 13](/docker/.imgs/Act-3/Fig6.png)
 
