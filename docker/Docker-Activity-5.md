@@ -31,7 +31,7 @@
         restart: always
     ```
 
-    ![docker-compose.yml](/Docker/.imgs/Act-5/Fig1.png)
+    ![docker-compose.yml](/docker/.imgs/Act-5/Fig1.png)
 
 2. Iniciar los contenedores:
 
@@ -47,7 +47,7 @@
     docker compose down
     ```
 
-![Example 1](/Docker/.imgs/Act-5/Fig2.png)
+![Example 1](/docker/.imgs/Act-5/Fig2.png)
 
 #### Ejemplo 2: Despliegue de Wordpress + mariadb
 
@@ -83,7 +83,7 @@
         mariadb_data:
     ```
 
-    ![docker-compose.yml](/Docker/.imgs/Act-5/Fig3.png)
+    ![docker-compose.yml](/docker/.imgs/Act-5/Fig3.png)
 
 2. Iniciar los contenedores:
 
@@ -99,7 +99,7 @@
     docker compose down
     ```
 
-![Example 2](/Docker/.imgs/Act-5/Fig4.png)
+![Example 2](/docker/.imgs/Act-5/Fig4.png)
 
 #### Ejemplo 3: Despliegue de tomcat + nginx
 
@@ -123,7 +123,7 @@
         - ./default.conf:/etc/nginx/conf.d/default.conf:ro
     ```
 
-    ![docker-compose.yml](/Docker/.imgs/Act-5/Fig5.png)
+    ![docker-compose.yml](/docker/.imgs/Act-5/Fig5.png)
 
 2. Crear el archivo de configuración `default.conf` para Nginx:
 
@@ -159,5 +159,5 @@
     docker compose down
     ```
 
-![Example 3](/Docker/.imgs/Act-5/Fig6.png)
+![Example 3](/docker/.imgs/Act-5/Fig6.png)
 
