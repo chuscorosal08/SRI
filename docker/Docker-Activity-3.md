@@ -38,7 +38,7 @@
     docker images
     ```
 
-    ![Steps 1-4](/Docker/.imgs/Act-3/Fig1.png)
+    ![Steps 1-4](/docker/.imgs/Act-3/Fig1.png)
 
 5. **Ejecuta un contenedor hello-world y dale nombre "myhello1":**
 
@@ -46,7 +46,7 @@
     docker run --name myhello1 hello-world
     ```
   
-    ![Step 5](/Docker/.imgs/Act-3/Fig2.png)
+    ![Step 5](/docker/.imgs/Act-3/Fig2.png)
 
 6. **Ejecuta un contenedor hello-world y dale nombre "myhello2":**
 
@@ -54,7 +54,7 @@
     docker run --name myhello2 hello-world
     ```
 
-    ![Step 6](/Docker/.imgs/Act-3/Fig3.png)
+    ![Step 6](/docker/.imgs/Act-3/Fig3.png)
 
 7. **Ejecuta un contenedor hello-world y dale nombre "myhello3":**
 
@@ -62,7 +62,7 @@
     docker run --name myhello3 hello-world
     ```
 
-    ![Step 7](/Docker/.imgs/Act-3/Fig4.png)
+    ![Step 7](/docker/.imgs/Act-3/Fig4.png)
 
 8. **Muestra los contenedores que se están ejecutando:**
 
@@ -94,7 +94,7 @@
     docker ps -a
     ```
 
-    ![Steps 8-12](/Docker/.imgs/Act-3/Fig5.png)
+    ![Steps 8-12](/docker/.imgs/Act-3/Fig5.png)
 
 13. **Borra todos los contenedores:**
 
