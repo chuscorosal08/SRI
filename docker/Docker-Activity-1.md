@@ -31,7 +31,7 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 ```
 
-![Add Docker Packages](/Docker/.imgs/Act-1/Fig1.png)
+![Add Docker Packages](SRI/docker/.imgs/Act-1/Fig1.png)
 
 ### [Install Docker Engine](https://docs.docker.com/engine/install/fedora/#install-docker-engine)
 
