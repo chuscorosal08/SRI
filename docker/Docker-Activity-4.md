@@ -42,7 +42,7 @@ La aplicación Temperaturas consta de dos microservicios:
     docker run -d -p 80:3000 --name temperaturas-frontend --network red_temperaturas iesgn/temperaturas_frontend
     ```
 
-    ![Example 1](/Docker/.imgs/Act-4/Fig1.png)
+    ![Example 1](/docker/.imgs/Act-4/Fig1.png)
 
 #### Observaciones
 
@@ -125,7 +125,7 @@ Este despliegue consiste en dos contenedores:
    docker ps
    ```
 
-![Example 2](/Docker/.imgs/Act-4/Fig2.png)
+![Example 2](/docker/.imgs/Act-4/Fig2.png)
 
 ##### Observaciones (Ej3)
 
@@ -187,5 +187,5 @@ Este ejemplo muestra el despliegue de una aplicación Java en Tomcat con un prox
                 nginx
    ```
 
-![Example 3](/Docker/.imgs/Act-4/Fig3.png)
+![Example 3](/docker/.imgs/Act-4/Fig3.png)
 
